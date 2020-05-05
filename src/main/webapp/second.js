@@ -5,7 +5,7 @@ function construct (){
 	$.ajax({
 		type: 'GET',
 			url: 'http://localhost:8080/healthCareApiProjecct/webapi/appointments',
-			 dataType: "json",
+			dataType: "json",
 			success: function(data){
 				$.each(data , function(i , data){
 					$details.append('<tr>'+
